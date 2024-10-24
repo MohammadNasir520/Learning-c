@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdbool.h>
+#include<limits.h>
 
 int main()
 {
@@ -34,7 +35,7 @@ int main()
 //     for (int i =1 ; i <= n; i++){
 //         scanf("%d", &a[i]);
 
-//         // printf("%d ",a[i]);
+        // printf("%d ",a[i]);
 //     }
 
 
@@ -50,5 +51,32 @@ int main()
 
 //     }
 //   printf("%d",sum);
+
+
+
+// ..............min , max output from array............
+
+int n;
+scanf("%d", &n);
+int a[n];
+for( int i=1; i<=n; i++){
+    scanf("%d", &a[i]);
+    // printf("%d ",a[i]);
+}
+
+int min = INT_MAX , max= INT_MIN;
+
+for (int i = 1; i<= n; i++){
+    if( a[i]< min ){
+        min= a[i];
+    }
+    if( a[i]> max ){
+        max= a[i];
+    }
+}
+
+printf("min %d , max %d",min , max);
+
+
     return 0;
 }
