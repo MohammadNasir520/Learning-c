@@ -298,8 +298,6 @@ int main()
     //     printf("%d ", b[i]);
     // }
 
-   
-
     // length2=length1;
     // printf("\n");
     // printf("after copy b");
@@ -310,6 +308,100 @@ int main()
     //     b[i] = a[i];
     //     printf("%d ", b[i]);
     // }
+
+    // ............. value insertion in array........
+
+    /*
+
+    int a[100000];
+
+    int length = 0;
+
+    scanf("%d", &length);
+
+    for (int i = 0; i < length; i++)
+    {
+        scanf("%d", &a[i]);
+    }
+
+    for (int i = 0; i < length; i++)
+    {
+
+        printf("%d ", a[i]);
+    }
+
+    int index = 0, value = 0;
+    scanf("%d %d", &index, &value);
+
+    printf("\n");
+    printf("%d %d", index, value);
+    printf("\n");
+
+    length++;
+
+    for (int i = length - 1; i >= index; i--)
+    {
+        a[i + 1] = a[i];
+    }
+    for (int i = 0; i < length; i++)
+    {
+
+        printf("%d ", a[i]);
+    }
+    for (int i = 0; i < length; i++)
+    {
+
+        a[index] = value;
+        // printf("%d ", a[i]);
+    }
+    printf("\n");
+    for (int i = 0; i < length; i++)
+    {
+
+        printf("%d ", a[i]);
+    }
+
+    */
+
+    // ..........delete a value from array............
+
+    /* 
+
+    int a[100000];
+
+    int length = 0;
+
+    scanf("%d", &length);
+
+    for (int i = 0; i < length; i++)
+    {
+        scanf("%d", &a[i]);
+    }
+
+    for (int i = 0; i < length; i++)
+    {
+
+        printf("%d ", a[i]);
+    }
+
+    int index = 0;
+    scanf("%d", &index);
+
+    printf("\n");
+    printf("%d", index);
+    printf("\n");
+
+    for (int i = index; i < length; i++)
+    {
+        a[i] = a[i + 1];
+    }
+    length--;
+    for (int i = 0; i < length; i++)
+    {
+        printf("%d",a[i]);
+    }
+
+    */
 
     return 0;
 }
