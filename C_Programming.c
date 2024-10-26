@@ -443,8 +443,6 @@ int main()
     // fgets(str, sizeof(str), stdin);
     // fputs(str, stdout);
 
-
-
     // length of string by strlen function
 
     /*
@@ -452,6 +450,29 @@ int main()
 
     int length = strlen(str);
     printf("%d", length);
+    */
+
+    //    ............copying an string from another string........
+
+
+/* 
+    char str1[20] = "abcd", str2[20];
+
+    fgets(str1, sizeof(str1), stdin);
+    int lengthStr1 = strlen(str1);
+    // fputs(str1, stdout);
+
+    for (int i = 0; i < lengthStr1; i++)
+
+    {
+        str2[i] = str1[i];
+    }
+
+    // use sing quation
+    str2[lengthStr1] = '\0';
+    printf("%s %s", str1, str2);
+
+
     */
     return 0;
 }
