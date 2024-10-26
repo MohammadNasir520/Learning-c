@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <limits.h>
+#include <string.h>
 
 int main()
 {
@@ -404,31 +405,53 @@ int main()
     */
 
     //  reverse an array by single array with temp value;
+    /*
+        int a[100000];
 
-    int a[100000];
+        int length = 0;
 
-    int length = 0;
+        scanf("%d", &length);
 
-    scanf("%d", &length);
+        for (int i = 0; i < length; i++)
+        {
+            scanf("%d", &a[i]);
+        }
 
-    for (int i = 0; i < length; i++)
-    {
-        scanf("%d", &a[i]);
-    }
+        for (int i = 0, j = length - 1; i <= j; i++, j--)
+        {
 
-    for (int i = 0, j = length - 1; i <= j; i++, j--)
-    {
+            int temp = a[i];
+            a[i] = a[j];
 
-        int temp = a[i];
-        a[i] = a[j];
+            a[j] = temp;
+        }
 
-        a[j] = temp;
-    }
+        for (int i = 0; i < length; i++)
+        {
+            printf("%d ", a[i]);
+        }
+    */
 
-    for (int i = 0; i < length; i++)
-    {
-        printf("%d ", a[i]);
-    }
+    //    take input of array
 
+    // char str[20];
+
+    // scanf("%s", str);
+
+    // printf("%s", str);
+
+    // fgets(str, sizeof(str), stdin);
+    // fputs(str, stdout);
+
+
+
+    // length of string by strlen function
+
+    /*
+    char str[5] = "abcd";
+
+    int length = strlen(str);
+    printf("%d", length);
+    */
     return 0;
 }
