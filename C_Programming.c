@@ -454,25 +454,37 @@ int main()
 
     //    ............copying an string from another string........
 
+    /*
+        char str1[20] = "abcd", str2[20];
 
-/* 
-    char str1[20] = "abcd", str2[20];
+        fgets(str1, sizeof(str1), stdin);
+        int lengthStr1 = strlen(str1);
+        // fputs(str1, stdout);
 
-    fgets(str1, sizeof(str1), stdin);
-    int lengthStr1 = strlen(str1);
-    // fputs(str1, stdout);
+        for (int i = 0; i < lengthStr1; i++)
 
-    for (int i = 0; i < lengthStr1; i++)
+        {
+            str2[i] = str1[i];
+        }
 
-    {
-        str2[i] = str1[i];
-    }
-
-    // use sing quation
-    str2[lengthStr1] = '\0';
-    printf("%s %s", str1, str2);
+        // use sing quation
+        str2[lengthStr1] = '\0';
+        printf("%s %s", str1, str2);
 
 
-    */
+        */
+    // copying string by strcpy function
+    /*
+        char str1[20] = "abcd", str2[20];
+
+        fgets(str1, sizeof(str1), stdin);
+        int lengthStr1 = strlen(str1);
+
+        // str1>>str2
+        strcpy(str2, str1);
+
+        printf("%s %s", str1, str2);
+
+        */
     return 0;
 }
