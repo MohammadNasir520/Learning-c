@@ -486,5 +486,198 @@ int main()
         printf("%s %s", str1, str2);
 
         */
+
+    //    str concat function strcat(a,b)
+
+    // do it
+
+    // int n;
+    // scanf("%d", &n);
+    // int arr[n];
+
+    // for (int i = 0; i < n; i++)
+    // {
+    //     scanf("%d", &arr[i]);
+    //     // printf("%d", arr[i]);
+    // }
+    // for (int i = 0; i < n; i++)
+    // {
+
+    //     if (arr[i] < 1)
+    //     {
+
+    //         printf("%s", "Entry-level candidate");
+    //          printf("\n");
+    //     }
+    //     else if (arr[i] <= 3 && arr[i] >= 1  )
+    //     {
+    //         printf("%s", "Junior candidate");
+    //         printf("\n");
+    //     }
+    //     else if (arr[i] >= 4 && arr[i] <= 7)
+    //     {
+    //         printf("%s", "Mid-level candidate");
+    //         printf("\n");
+    //     }
+    //     else if (arr[i] > 7 )
+    //     {
+    //         printf("%s", "Senior candidate");
+
+    //     }
+    // }
+
+
+/* 
+    char str1[1000], str2[1000], str3[1000];
+    scanf("%s %s %s", str1, str2, str3);
+
+
+    int com1 = strcmp(str1, str2);
+    int com2 = strcmp(str2, str3);
+    int com3 = strcmp(str1, str3);
+//  printf("%d %d %d", com1, com2, com3);
+//  printf("\n");
+    // 0 = equeal
+    // 1= pisoner ta soto
+    // -1= samner ta soto
+
+    int min = 0, max = 0;
+
+    // for 1min,
+    if (com1 < 0 && com3 < 0 && com2 < 0)
+    {
+
+        min = 1;
+        max = 3;
+        // printf("1");
+    }
+    else if (com1 < 0 && com3 < 0 && com2 > 0)
+    {
+
+        min = 1;
+        max = 2;
+        //  printf("2");
+    }
+
+    // equal and min 1,2
+    if (com1 == 0 && com3 < 0 && com2 < 0)
+    {
+
+        min = 1;
+        max = 3;
+        //  printf("3");
+    }
+
+    // equal and max 1,2
+    if (com1 == 0 && com3 > 0)
+    {
+
+        min = 3;
+        max = 1;
+        //  printf("4");
+    }
+
+    // for 2min
+    if (com1 > 0 && com2 < 0 && com3 > 0)
+    {
+
+        min = 2;
+        max = 1;
+        //  printf("5");
+    }
+    else if (com1 > 0 && com2 < 0 && com3 < 0)
+    {
+
+        min = 2;
+        max = 3;
+        //  printf("6");
+    }
+
+    // equal and min 2 3
+    if (com1 > 0 && com2 == 0)
+    {
+
+        min = 2;
+        max = 1;
+        //  printf("7");
+    }
+    // equal and max 2 3
+    else if (com1 < 0 && com2 == 0)
+    {
+
+        min = 1;
+        max = 2;
+        //  printf("8");
+    }
+
+    // for min 3
+    if (com3 > 0 && com2 > 0 && com1 > 0)
+    {
+
+        min = 3;
+        max = 1;
+        //  printf("9");
+    }
+    else if (com3 > 0 && com2 > 0 && com1 < 0)
+    {
+
+        min = 3;
+        max = 2;
+        //  printf("10");
+    }
+
+    // equal 1 3 and min than 2
+    if (com3 == 0 && com1 < 0)
+    {
+
+        min = 3;
+        max = 2;
+        //  printf("11");
+    }
+    // equal 1 3 and max than 2
+    else if (com3 == 0 && com2 < 0)
+    {
+
+        min = 2;
+        max = 3;
+        //  printf("12");
+    }
+    if (com3 == com1 && com2 == com3)
+    {
+
+        min = 1;
+        max = 3;
+        //  printf("13");
+    }
+
+    if (min == 1)
+    {
+        fputs(str1 ,stdout);
+    }
+    else if (min == 2)
+    {
+        fputs(str2 ,stdout);
+    }
+
+    else if (min == 3)
+    {
+        fputs(str3 ,stdout);
+    }
+    printf("\n");
+    if (max == 1)
+    {
+        fputs(str1 ,stdout);
+    }
+    else if (max == 2)
+    {
+        fputs(str2 ,stdout);
+    }
+
+    else if (max == 3)
+    {
+        fputs(str3 ,stdout);
+    }
+    */
+
     return 0;
 }
