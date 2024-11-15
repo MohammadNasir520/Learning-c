@@ -526,157 +526,202 @@ int main()
     //     }
     // }
 
+    /*
+        char str1[1000], str2[1000], str3[1000];
+        scanf("%s %s %s", str1, str2, str3);
 
-/* 
-    char str1[1000], str2[1000], str3[1000];
-    scanf("%s %s %s", str1, str2, str3);
 
+        int com1 = strcmp(str1, str2);
+        int com2 = strcmp(str2, str3);
+        int com3 = strcmp(str1, str3);
+    //  printf("%d %d %d", com1, com2, com3);
+    //  printf("\n");
+        // 0 = equeal
+        // 1= pisoner ta soto
+        // -1= samner ta soto
 
-    int com1 = strcmp(str1, str2);
-    int com2 = strcmp(str2, str3);
-    int com3 = strcmp(str1, str3);
-//  printf("%d %d %d", com1, com2, com3);
-//  printf("\n");
-    // 0 = equeal
-    // 1= pisoner ta soto
-    // -1= samner ta soto
+        int min = 0, max = 0;
 
-    int min = 0, max = 0;
+        // for 1min,
+        if (com1 < 0 && com3 < 0 && com2 < 0)
+        {
 
-    // for 1min,
-    if (com1 < 0 && com3 < 0 && com2 < 0)
-    {
+            min = 1;
+            max = 3;
+            // printf("1");
+        }
+        else if (com1 < 0 && com3 < 0 && com2 > 0)
+        {
 
-        min = 1;
-        max = 3;
-        // printf("1");
+            min = 1;
+            max = 2;
+            //  printf("2");
+        }
+
+        // equal and min 1,2
+        if (com1 == 0 && com3 < 0 && com2 < 0)
+        {
+
+            min = 1;
+            max = 3;
+            //  printf("3");
+        }
+
+        // equal and max 1,2
+        if (com1 == 0 && com3 > 0)
+        {
+
+            min = 3;
+            max = 1;
+            //  printf("4");
+        }
+
+        // for 2min
+        if (com1 > 0 && com2 < 0 && com3 > 0)
+        {
+
+            min = 2;
+            max = 1;
+            //  printf("5");
+        }
+        else if (com1 > 0 && com2 < 0 && com3 < 0)
+        {
+
+            min = 2;
+            max = 3;
+            //  printf("6");
+        }
+
+        // equal and min 2 3
+        if (com1 > 0 && com2 == 0)
+        {
+
+            min = 2;
+            max = 1;
+            //  printf("7");
+        }
+        // equal and max 2 3
+        else if (com1 < 0 && com2 == 0)
+        {
+
+            min = 1;
+            max = 2;
+            //  printf("8");
+        }
+
+        // for min 3
+        if (com3 > 0 && com2 > 0 && com1 > 0)
+        {
+
+            min = 3;
+            max = 1;
+            //  printf("9");
+        }
+        else if (com3 > 0 && com2 > 0 && com1 < 0)
+        {
+
+            min = 3;
+            max = 2;
+            //  printf("10");
+        }
+
+        // equal 1 3 and min than 2
+        if (com3 == 0 && com1 < 0)
+        {
+
+            min = 3;
+            max = 2;
+            //  printf("11");
+        }
+        // equal 1 3 and max than 2
+        else if (com3 == 0 && com2 < 0)
+        {
+
+            min = 2;
+            max = 3;
+            //  printf("12");
+        }
+        if (com3 == com1 && com2 == com3)
+        {
+
+            min = 1;
+            max = 3;
+            //  printf("13");
+        }
+
+        if (min == 1)
+        {
+            fputs(str1 ,stdout);
+        }
+        else if (min == 2)
+        {
+            fputs(str2 ,stdout);
+        }
+
+        else if (min == 3)
+        {
+            fputs(str3 ,stdout);
+        }
+        printf("\n");
+        if (max == 1)
+        {
+            fputs(str1 ,stdout);
+        }
+        else if (max == 2)
+        {
+            fputs(str2 ,stdout);
+        }
+
+        else if (max == 3)
+        {
+            fputs(str3 ,stdout);
+        }
+        */
+
+    // frequency of a number in array--------------------
+    /*
+       int n;
+       scanf("%d", &n);
+        int a[n+5];
+
+        for (int i = 0; i < n; i++)
+        {
+            scanf("%d", &a[i]);
+        }
+
+        int f[100000] = {0};
+
+    for (int i = 0; i < n; i++){
+        f[a[i]]=1;
     }
-    else if (com1 < 0 && com3 < 0 && com2 > 0)
-    {
 
-        min = 1;
-        max = 2;
-        //  printf("2");
+    for (int i = 0; i < 10; i++){
+        printf("%d %d \n ", i, f[i]);
     }
 
-    // equal and min 1,2
-    if (com1 == 0 && com3 < 0 && com2 < 0)
-    {
+    printf("%d", f[7]);
 
-        min = 1;
-        max = 3;
-        //  printf("3");
-    }
+    */
+    //    uninqe string--------------------------
+    /*
 
-    // equal and max 1,2
-    if (com1 == 0 && com3 > 0)
-    {
+        char str[10] = "apple";
 
-        min = 3;
-        max = 1;
-        //  printf("4");
-    }
+        int f[26] = {0};
 
-    // for 2min
-    if (com1 > 0 && com2 < 0 && com3 > 0)
-    {
+        int len = strlen(str);
+        for (int i = 0; i < len; i++)
+        {
+            char ch = str[i];
+            int index = ch - 'a';
 
-        min = 2;
-        max = 1;
-        //  printf("5");
-    }
-    else if (com1 > 0 && com2 < 0 && com3 < 0)
-    {
+            f[index] = 1;
+        }
 
-        min = 2;
-        max = 3;
-        //  printf("6");
-    }
-
-    // equal and min 2 3
-    if (com1 > 0 && com2 == 0)
-    {
-
-        min = 2;
-        max = 1;
-        //  printf("7");
-    }
-    // equal and max 2 3
-    else if (com1 < 0 && com2 == 0)
-    {
-
-        min = 1;
-        max = 2;
-        //  printf("8");
-    }
-
-    // for min 3
-    if (com3 > 0 && com2 > 0 && com1 > 0)
-    {
-
-        min = 3;
-        max = 1;
-        //  printf("9");
-    }
-    else if (com3 > 0 && com2 > 0 && com1 < 0)
-    {
-
-        min = 3;
-        max = 2;
-        //  printf("10");
-    }
-
-    // equal 1 3 and min than 2
-    if (com3 == 0 && com1 < 0)
-    {
-
-        min = 3;
-        max = 2;
-        //  printf("11");
-    }
-    // equal 1 3 and max than 2
-    else if (com3 == 0 && com2 < 0)
-    {
-
-        min = 2;
-        max = 3;
-        //  printf("12");
-    }
-    if (com3 == com1 && com2 == com3)
-    {
-
-        min = 1;
-        max = 3;
-        //  printf("13");
-    }
-
-    if (min == 1)
-    {
-        fputs(str1 ,stdout);
-    }
-    else if (min == 2)
-    {
-        fputs(str2 ,stdout);
-    }
-
-    else if (min == 3)
-    {
-        fputs(str3 ,stdout);
-    }
-    printf("\n");
-    if (max == 1)
-    {
-        fputs(str1 ,stdout);
-    }
-    else if (max == 2)
-    {
-        fputs(str2 ,stdout);
-    }
-
-    else if (max == 3)
-    {
-        fputs(str3 ,stdout);
-    }
+        for (int i = 0; i < 26; i++)
+        {
+            printf("%c %d\n ", i + 'a', f[i]);
+        }
     */
 
     return 0;
