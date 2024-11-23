@@ -724,27 +724,35 @@ int main()
         }
     */
 
-//    2d array input and print
+    //    2d array input and print
+    /*
+        int n, m;
+        scanf("%d %d", &n, &m);
+        int a[n + 5][m + 5];
 
-    int n, m;
-    scanf("%d %d", &n, &m);
-    int a[n + 5][m + 5];
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = 0; j < m; j++)
+            {
+                scanf("%d", &a[i][j]);
+            }
+        }
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = 0; j < m; j++)
+            {
+                printf("%d ", a[i][j]);
+            }
+            printf("\n");
+        }
+    */
 
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = 0; j < m; j++)
-        {
-            scanf("%d", &a[i][j]);
-        }
-    }
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = 0; j < m; j++)
-        {
-            printf("%d ", a[i][j]);
-        }
-        printf("\n");
-    }
+    // address input out put
+    int a = 5;
+    // dereferencing
+    int *b = &a;
+
+    printf("%d\n%d", &a, b);
 
     return 0;
 }
