@@ -890,59 +890,92 @@ int main()
         }
     */
 
+    /* number search in arry problem*/
 
-/* number search in arry problem*/ 
-    int N, M, X;
+    /*
+        int N, M, X;
 
-    scanf("%d %d %d", &N, &M, &X);
-    // printf("%d %d %d", N, M, X);
+        scanf("%d %d %d", &N, &M, &X);
+        // printf("%d %d %d", N, M, X);
 
-    int arr[N][M];
+        int arr[N][M];
 
-    int searchArr[X];
-
-    for (int i = 0; i < N; i++)
-    {
-        for (int j = 0; j < M; j++)
-        {
-            scanf("%d", &arr[i][j]);
-        }
-    }
-    for (int i = 0; i < N; i++)
-    {
-        for (int j = 0; j < M; j++)
-        {
-            // printf("%d ", arr[i][j]);
-        }
-        // printf("\n");
-    }
-    for (int c = 0; c < X; c++)
-    {
-        scanf("%d ", &searchArr[c]);
-    }
-
-
-
-    for (int c = 0; c < X; c++)
-    {
-        int searchNumber = searchArr[c];
-        int found = 0;
-        // printf("%d", searchNumber);
+        int searchArr[X];
 
         for (int i = 0; i < N; i++)
         {
             for (int j = 0; j < M; j++)
             {
-                // printf("%d ", arr[i][j]);
-
-                if (arr[i][j] == searchNumber)
-                {
-                    found = found + 1;
-                }
+                scanf("%d", &arr[i][j]);
             }
         }
-        printf("%d\n", found);
+        for (int i = 0; i < N; i++)
+        {
+            for (int j = 0; j < M; j++)
+            {
+                // printf("%d ", arr[i][j]);
+            }
+            // printf("\n");
+        }
+        for (int c = 0; c < X; c++)
+        {
+            scanf("%d ", &searchArr[c]);
+        }
+
+
+
+        for (int c = 0; c < X; c++)
+        {
+            int searchNumber = searchArr[c];
+            int found = 0;
+            // printf("%d", searchNumber);
+
+            for (int i = 0; i < N; i++)
+            {
+                for (int j = 0; j < M; j++)
+                {
+                    // printf("%d ", arr[i][j]);
+
+                    if (arr[i][j] == searchNumber)
+                    {
+                        found = found + 1;
+                    }
+                }
+            }
+            printf("%d\n", found);
+        }
+        */
+// solve of count unique problem
+    int n;
+    scanf("%d", &n);
+    // printf("%d \n", n);
+    int arr[n];
+    // int maxValue = 100000 + 5;
+    int f[100000 + 5] = {0};
+
+    for (int i = 0; i < n; i++)
+    {
+        scanf("%d", &arr[i]);
     }
+
+    for (int i = 0; i < n; i++)
+    {
+        // printf("%d ", arr[i]);
+
+        f[arr[i]] += 1;
+    }
+
+    int count = 0;
+    for (int i = 0; i < 100000 + 5; i++)
+    {
+        // printf("%d %d\n ", i, f[i]);
+        if (f[i] == 1)
+        {
+            count++;
+        }
+    }
+    printf("%d", count);
+ 
 
     return 0;
 }
