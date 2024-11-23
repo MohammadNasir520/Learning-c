@@ -2,6 +2,7 @@
 #include <stdbool.h>
 #include <limits.h>
 #include <string.h>
+#include <stdlib.h>
 
 int main()
 {
@@ -748,11 +749,44 @@ int main()
     */
 
     // address input out put
-    int a = 5;
-    // dereferencing
-    int *b = &a;
+    // int a = 5;
+    // // dereferencing
+    // int *b = &a;
 
-    printf("%d\n%d", &a, b);
+    // printf("%d\n%d", &a, b);
 
+    // dynamic array
+    // for this needs stdlib header file
+
+    int *arr = (int *)malloc(5 * (sizeof(int)));
+    for (int i = 0; i < 5; i++)
+    {
+        arr[i] = i + 1;
+    }
+    for (int i = 0; i < 5; i++)
+    {
+        printf("%d \n", arr[i]);
+    }
+
+    // resize
+    int *temp = arr;
+
+    arr = (int *)realloc(arr, 10 * sizeof(int));
+
+    if (arr == NULL)
+    {
+        arr = temp;
+    }
+
+    for (int i = 5; i < 10; i++)
+    {
+        arr[i] = 100 + i;
+    }
+    for (int i = 5; i < 10; i++)
+    {
+        printf("%d \n", arr[i]);
+    }
+    // de allocation , free location for arr to use another time
+    free(arr);
     return 0;
 }
