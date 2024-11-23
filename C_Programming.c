@@ -791,12 +791,32 @@ int main()
         */
 
     //    pointer of pointer
-    int a = 5;
-    int *x = &a;
+    // int a = 5;
+    // int *x = &a;
 
-    int **y = &x;
-    // printf("%d %d", y, &x);
-    // for value of a 
-    printf("%d %d", **y, &x);
+    // int **y = &x;
+    // // printf("%d %d", y, &x);
+    // // for value of a
+    // printf("%d %d", **y, &x);
+
+    // difference solve
+
+    // int A, B;
+    // scanf("%d %d", &A, &B);
+
+    // int *x = &A;
+    // int *y = &B;
+
+    // printf("%d %d \n", x, y);
+
+    // // difference
+
+    // int result = *x - *y;
+    // if (result < 0)
+    // {
+    //     result = result * -1;
+    // }
+    // printf("%d ", result);
+
     return 0;
 }
