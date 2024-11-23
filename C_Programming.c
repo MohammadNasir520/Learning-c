@@ -890,5 +890,59 @@ int main()
         }
     */
 
+
+/* number search in arry problem*/ 
+    int N, M, X;
+
+    scanf("%d %d %d", &N, &M, &X);
+    // printf("%d %d %d", N, M, X);
+
+    int arr[N][M];
+
+    int searchArr[X];
+
+    for (int i = 0; i < N; i++)
+    {
+        for (int j = 0; j < M; j++)
+        {
+            scanf("%d", &arr[i][j]);
+        }
+    }
+    for (int i = 0; i < N; i++)
+    {
+        for (int j = 0; j < M; j++)
+        {
+            // printf("%d ", arr[i][j]);
+        }
+        // printf("\n");
+    }
+    for (int c = 0; c < X; c++)
+    {
+        scanf("%d ", &searchArr[c]);
+    }
+
+
+
+    for (int c = 0; c < X; c++)
+    {
+        int searchNumber = searchArr[c];
+        int found = 0;
+        // printf("%d", searchNumber);
+
+        for (int i = 0; i < N; i++)
+        {
+            for (int j = 0; j < M; j++)
+            {
+                // printf("%d ", arr[i][j]);
+
+                if (arr[i][j] == searchNumber)
+                {
+                    found = found + 1;
+                }
+            }
+        }
+        printf("%d\n", found);
+    }
+
     return 0;
 }
