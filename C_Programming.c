@@ -1006,66 +1006,136 @@ int main()
 
     // jadu matrinx
 
-    int n, m;
+    // int n, m;
 
-    scanf("%d %d", &n, &m);
-    // printf("%d %d", n, m);
+    // scanf("%d %d", &n, &m);
+    // // printf("%d %d", n, m);
 
+    //   if (n != m) {
+    //     printf("NO");
+    //     return 0;
+    // }
 
-      if (n != m) {
-        printf("NO");
-        return 0;
-    }
+    // int marr[n + 5][m + 5];
 
-    int marr[n + 5][m + 5];
+    // for (int i = 0; i < n; i++)
+    // {
 
-    for (int i = 0; i < n; i++)
-    {
+    //     for (int j = 0; j < m; j++)
+    //     {
+    //         scanf("%d", &marr[i][j]);
+    //     }
+    // }
 
-        for (int j = 0; j < m; j++)
-        {
-            scanf("%d", &marr[i][j]);
-        }
-    }
+    // int flag = 1;
+    // for (int i = 0; i < n; i++)
+    // {
 
-    int flag = 1;
-    for (int i = 0; i < n; i++)
-    {
+    //     for (int j = 0; j < m; j++)
+    //     {
+    //         // printf("%d ", marr[i][j]);
 
-        for (int j = 0; j < m; j++)
-        {
-            // printf("%d ", marr[i][j]);
+    //         if ( i == j || i + j == n - 1)
+    //         {
+    //             if (marr[i][j] != 1)
+    //             {
+    //                 flag = 0;
+    //             }
+    //         }
+    //         else if (marr[i][j] != 0)
+    //         {
+    //             flag = 0;
+    //         }
 
-            if ( i == j || i + j == n - 1)
-            {
-                if (marr[i][j] != 1)
-                {
-                    flag = 0;
-                }
-            }
-            else if (marr[i][j] != 0)
-            {
-                flag = 0;
-            }
+    //         // if ()
+    //         // {
+    //         //     if (marr[i][j] != 1)
+    //         //     {
+    //         //         flag = 0;
+    //         //     }
+    //         // }
+    //     }
+    //     // printf("\n");
+    // }
+    // // printf("%d\n", flag);
+    // if (flag == 1)
+    // {
+    //     printf("YES");
+    // }
+    // else
+    // {
+    //     printf("NO");
+    // }
 
-            // if ()
-            // {
-            //     if (marr[i][j] != 1)
-            //     {
-            //         flag = 0;
-            //     }
-            // }
-        }
-        // printf("\n");
-    }
-    // printf("%d\n", flag);
-    if (flag == 1)
-    {
-        printf("YES");
-    }
-    else
-    {
-        printf("NO");
-    }
+    // int n;
+    // scanf("%d", &n);
+    // // printf("%d \n", n);
+    // int arr[n][4];
+    // for (int i = 0; i < n; i++)
+    // {
+    //     for (int j = 0; j < 4; j++)
+    //     {
+    //         scanf("%d", &arr[i][j]);
+    //     }
+    // }
+    // for (int i = 0; i < n; i++)
+    // {
+    //     long long base = 0;
+    //     long long multiply = 1;
+
+    //     for (int j = 0; j < 4; j++)
+    //     {
+    //         // printf("%d ", arr[i][j]);
+    //         base = arr[i][0];
+    //         if (j <= 2)
+    //         {
+    //             multiply *= arr[i][j + 1];
+    //         }
+    //     }
+    //     // printf("%d ", base);
+    //     // printf("%d ", multiply);
+    //     if (multiply == 0)
+    //     {
+    //         printf("%d\n", -1);
+    //     }
+    //     else if (base % multiply == 0)
+    //     {
+
+    //         printf("%lld\n", base / multiply);
+    //     }
+    //     else
+    //     {
+    //         printf("%d\n", -1);
+    //     }
+    // }
+
+    // int T;
+    // scanf("%d", &T);
+    // // printf("%d", T);
+
+    // long long M, A, B, C;
+    // for (int i = 0; i < T; i++)
+    // {
+
+    //     scanf("%lld %lld %lld %lld", &M, &A, &B, &C);
+    //     // printf("%d %d %d %d ", M, A, B, C);
+
+    //     long long multiply = A * B * C;
+    //     // printf("%lld\n", multiply);
+
+    //     if (multiply == 0)
+    //     {
+    //         printf("%d\n", -1);
+    //     }
+    //     else if (M % multiply == 0)
+    //     {
+    //         printf("%lld\n", M / multiply);
+    //     }
+    //     else
+    //     {
+    //         printf("%d\n", -1);
+    //     }
+    // }
+
     return 0;
 }
