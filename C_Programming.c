@@ -945,37 +945,127 @@ int main()
             printf("%d\n", found);
         }
         */
-// solve of count unique problem
-    int n;
-    scanf("%d", &n);
-    // printf("%d \n", n);
-    int arr[n];
-    // int maxValue = 100000 + 5;
-    int f[100000 + 5] = {0};
+    // solve of count unique problem
+    /*
+        int n;
+        scanf("%d", &n);
+        // printf("%d \n", n);
+        int arr[n];
+        // int maxValue = 100000 + 5;
+        int f[100000 + 5] = {0};
 
-    for (int i = 0; i < n; i++)
-    {
-        scanf("%d", &arr[i]);
-    }
-
-    for (int i = 0; i < n; i++)
-    {
-        // printf("%d ", arr[i]);
-
-        f[arr[i]] += 1;
-    }
-
-    int count = 0;
-    for (int i = 0; i < 100000 + 5; i++)
-    {
-        // printf("%d %d\n ", i, f[i]);
-        if (f[i] == 1)
+        for (int i = 0; i < n; i++)
         {
-            count++;
+            scanf("%d", &arr[i]);
+        }
+
+        for (int i = 0; i < n; i++)
+        {
+            // printf("%d ", arr[i]);
+
+            f[arr[i]] += 1;
+        }
+
+        int count = 0;
+        for (int i = 0; i < 100000 + 5; i++)
+        {
+            // printf("%d %d\n ", i, f[i]);
+            if (f[i] == 1)
+            {
+                count++;
+            }
+        }
+        printf("%d", count);
+     */
+
+    // increasing decreasing number with loop
+    // int t;
+    // scanf("%d", &t);
+    // // printf("%d", t);
+
+    // int arr[t];
+
+    // for (int i = 0; i < t; i++)
+    // {
+    //     scanf("%d", &arr[i]);
+    // }
+    // for (int i = 0; i < t; i++)
+    // {
+    //     // printf("%d", arr[i]);
+
+    //     for (int j = 1; j <= arr[i]; j++)
+    //     {
+    //         printf("%d ", j);
+    //     }
+    //     for (int j = arr[i] - 1; j >= 1; j--)
+    //     {
+    //         printf("%d ", j);
+    //     }
+    //     printf("\n");
+    // }
+
+    // jadu matrinx
+
+    int n, m;
+
+    scanf("%d %d", &n, &m);
+    // printf("%d %d", n, m);
+
+
+      if (n != m) {
+        printf("NO");
+        return 0;
+    }
+
+    int marr[n + 5][m + 5];
+
+    for (int i = 0; i < n; i++)
+    {
+
+        for (int j = 0; j < m; j++)
+        {
+            scanf("%d", &marr[i][j]);
         }
     }
-    printf("%d", count);
- 
 
+    int flag = 1;
+    for (int i = 0; i < n; i++)
+    {
+
+        for (int j = 0; j < m; j++)
+        {
+            // printf("%d ", marr[i][j]);
+
+            if ( i == j || i + j == n - 1)
+            {
+                if (marr[i][j] != 1)
+                {
+                    flag = 0;
+                }
+            }
+            else if (marr[i][j] != 0)
+            {
+                flag = 0;
+            }
+
+            // if ()
+            // {
+            //     if (marr[i][j] != 1)
+            //     {
+            //         flag = 0;
+            //     }
+            // }
+        }
+        // printf("\n");
+    }
+    // printf("%d\n", flag);
+    if (flag == 1)
+    {
+        printf("YES");
+    }
+    else
+    {
+        printf("NO");
+    }
     return 0;
 }

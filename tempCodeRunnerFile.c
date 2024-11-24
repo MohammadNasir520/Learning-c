@@ -1,26 +1,21 @@
 
-    int n;
-    scanf("%d", &n); // Input the size of the array
 
-    int arr[n];
-    int maxValue = 100000; // Max possible value of array elements
-    int freq[maxValue + 1]; // Frequency array
+// int main() {
+//     int N = 100, M = 100;
 
-    // Initialize frequency array to 0
-    for (int i = 0; i <= maxValue; i++) {
-        freq[i] = 0;
-    }
+//     printf("%d %d\n", N, M);  // Matrix dimensions
 
-    // Input array and calculate frequencies
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
-        freq[arr[i]]++; // Increment frequency for each value
-    }
+//     for (int i = 0; i < N; i++) {
+//         for (int j = 0; j < M; j++) {
+//             // Fill diagonal and anti-diagonal with 1
+//             if (i == j || i + j == N - 1) {
+//                 printf("1 ");
+//             } else {
+//                 printf("0 ");
+//             }
+//         }
+//         printf("\n");
+//     }
 
-    // Print unique values
-    printf("Unique values:\n");
-    for (int i = 0; i < n; i++) {
-        if (freq[arr[i]] == 1) {
-            printf("%d ", arr[i]);
-        }
-    }
+//     return 0;
+// }
